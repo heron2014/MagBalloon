@@ -1,0 +1,107 @@
+/*.nav-pills > li > a {*/
+    /*border-radius: 4px;*/
+    /**/
+    /*font-size: 15px;*/
+/*}*/
+
+
+.navbar-brand {
+
+    font-size: 12px;
+}
+.social-icon {
+    float: right;
+}
+.header-logo {
+    margin-top: 80px;
+}
+
+#myCarousel .item {
+    /*default height size - medium */
+    height: 310px;
+}
+#slide1 {
+    /*top center to center images if other sizes not supplied*/
+    background: url('../images/carousel_small_01.jpg') top center no-repeat;
+}
+#slide2 {
+    background: url('../images/carousel_small_02.jpg') top center no-repeat;
+}
+#slide3 {
+    background: url('../images/carousel_small_03.jpg') top center no-repeat;
+}
+#slide4 {
+    background: url('../images/carousel_small_01.jpg') top center no-repeat;
+}
+.footer-wrapper > .container>.row>p:last-child {
+    text-align: center;
+}
+.graph-wrapper {
+    text-align: center;
+}
+.graph-wrapper >.img1 {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.graph-wrapper > .img1 > img {
+    width: 100px;
+    height: 100px;
+}
+#inflate {
+    top: -10px;
+    left: 30px;
+}
+#party {
+    z-index: 999;
+}
+#play {
+    top: -10px;
+    right: 30px;
+}
+
+.caption {
+    display: block;
+}
+.retailer-section {
+    height: auto;
+    background-color: lightblue;
+}
+.caption-whereToBuy > h3 {
+    text-align: center;
+    border: 1px solid pink;
+    padding: 10px 5px 10px 5px;
+}
+
+@media (max-width: 767px) {
+    #mobile-desktop {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    #mobile-desktop {
+        display: none;
+    }
+    #top-info {
+        display: none;
+    }
+}
+@media (max-width: 320px) {
+    .graph-wrapper > .img1 > img {
+        width: 80px;
+        height: 80px;
+    }
+    #mobile-desktop {
+        display: none;
+    }
+    .navbar-brand {
+
+        font-size: 10px;
+    }
+    #top-info {
+        display: none;
+    }
+}
