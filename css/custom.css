@@ -414,7 +414,26 @@ address {
     border: 1px solid pink;
     padding: 10px 5px 10px 5px;
 }
+.thumbnail-prod-range, .thumbnail-in-action, .thumbnail-faq {
+    background-color: transparent;
+    border: none;
+}
 /* -------------End WhereToBuy - retailer section ------------*/
+
+/* ------------- Become a Retailer section ------------*/
+
+.thumbnail_retailer3 {
+    background-color: transparent;
+    margin-top: 20px;
+    border: none;
+}
+.thumbnail_retailer3 .caption p{
+    font-family: 'Helvetica-Bold';
+    color: rgba(255, 255, 255, 0.87);
+}
+
+
+/* ------------- End Retailer section ------------*/
 
 /* ------------- Products - event-general section ------------*/
 #event-general {
@@ -440,7 +459,7 @@ address {
     background-color: #fff;
 }
 #contact-section > .container {
-    background: rgba(43, 190, 216, 0.73) url('../images/Setup_Back.jpg') center center fixed;
+    background: rgba(43, 190, 216, 0.73) url('../images/Contact_Back.jpg') center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -520,9 +539,16 @@ address {
 
 }
 /* ------------- End Contact Us ------------*/
+
+
 /* -------------Media Queries ------------*/
 @media(max-width:479px){
+    /*#logo {*/
+        /*background: url('../images/Logo_Small.png') no-repeat;*/
+        /*width: 150px;*/
+        /*height: 84px;*/
 
+    /*}*/
     #inflate img, #party img, #play img{
         width:100px;
         height: 100px;
