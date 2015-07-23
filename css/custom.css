@@ -12,6 +12,7 @@
 }
 body {
     position: relative;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -42,13 +43,47 @@ p{
 }
 
 /******** Info top section *********/
-#top-info {
+#top-info, .navbar-inverse {
 
     background: rgba(43, 190, 216, 0.73) url('../images/Contact_Bar_Back.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+.navbar-inverse {
+    border:  none;
+}
+.navbar-brand {
+    font-family: 'Helvetica-Bold';
+    color: rgba(255, 255, 255, 0.87);
+}
+.navbar-inverse .navbar-brand {
+
+    color: rgba(255, 255, 255, 0.87);
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #e62079;
+}
+.navbar-toggle{
+    background-color: #e62079;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #e62079;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    font-family: 'Helvetica-Bold';
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #e62079;
+}
+.navbar-inverse .navbar-nav > li > a {
+    font-family: 'Helvetica-Bold';
+    color:#e62079;
+}
+.container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
+
+    border: none;
 }
 nav.info {
     padding: 12px;
@@ -207,7 +242,7 @@ a.info-nav-item {
 }
 #instruct-general > .container {
     /*background:  #2bbed8 url('../images/Setup_Back.jpg') no-repeat;*/
-
+    background-color: rgba(39, 173, 197, 0.33);
     /*box-shadow: 6px 0px 5px -5px #999, -6px 0px 5px -5px #999;*/
     box-shadow: 10px 0px 5px -5px rgba(117, 106, 106, 0.3), -10px 0px 5px -5px rgba(117, 106, 106, 0.3);
     padding: 40px 20px;
@@ -299,7 +334,11 @@ address {
 /* -------------WhereToBuy - retailer section ------------*/
 .retailer-section{
     height: 400px;
-    background-color: #2bbed8;
+    background: rgba(43, 190, 216, 0.73) url('../images/Setup_Back.jpg') center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .retailer-section > .container > .row {
@@ -398,7 +437,11 @@ address {
     background-color: #fff;
 }
 #contact-section > .container {
-    background-color: #2bbed8;
+    background: rgba(43, 190, 216, 0.73) url('../images/Setup_Back.jpg') center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     border-radius: 4px;
 }
 .thumbnail-contact {
@@ -475,14 +518,72 @@ address {
 }
 /* ------------- End Contact Us ------------*/
 /* -------------Media Queries ------------*/
-@media(max-width:320px){
-    .graph-wrapper > .img1 > img {
-        width: 50px;
-        height: 50px;
+@media(max-width:479px){
+
+    #inflate img, #party img, #play img{
+        width:100px;
+        height: 100px;
+        position: absolute;
+    }
+
+    #inflate img{
+
+        left: -20px;
+        top: 10px;
+    }
+    #party img{
+        left: -50px;
+        top: 10px;
+    }
+    #play img {
+        top: 10px;
+        left: 20px;
+    }
+    #inflate .caption {
+        margin-top: 100px;
+        margin-left:-30px;
+
+    }
+    #party .caption {
+        margin-top: 100px;
+        margin-left:-40px;
+    }
+    #play .caption {
+        margin-top: 100px;
+        margin-right: -40px;
+        margin-left: 30px;
+    }
+    address, #footer-wrapper h4, #footer-wrapper p {
+        font-size: 10px;
+    }
+    #instruct-general .btn-default {
+        font-size: 12px;
+    }
+
+}
+@media(max-width:480px){
+
+    #inflate {
+        width: 100px;
+        height:100px;
+        left:-10px;
     }
 }
+@media(max-width:518px){
 
+    #inflate {
+        width: 100px;
+        height:100px;
+        left:-10px;
+    }
+}
 @media(max-width:767px){
+    .fixed_height {
+        height:auto;
+    }
+    .thumbnail_retailer {
+        overflow-y: scroll;
+    }
     .logo-section{
         margin-top: 80px;
     }
@@ -504,12 +605,9 @@ address {
         border: 1px solid pink;
         padding: 10px 5px 10px 5px;
     }
-
-
-
     .graph-wrapper > .img1 > img {
-        width: 100px;
-        height: 100px;
+        width: 140px;
+        height: 140px;
     }
     #myCarousel .item {
         height: 310px;
@@ -532,12 +630,17 @@ address {
     .carousel-caption h4{
         font-size: 22px;
     }
+    #inflate .caption, #play .caption, #party .caption {
+        font-size: 20px;
+    }
 }
 @media(min-width:768px){
+
     #mobile-menu {
         display: none;
     }
     #desktop-navigation > .container {
+        /*for the main navigation purpose to be perfectly centered*/
         width: 768px;
     }
 }
