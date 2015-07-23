@@ -1,6 +1,17 @@
 (function() {
 
+
+
     $(function() {
+
+        $("#home a:contains('Home')").parent().addClass('active');
+        $("#products a:contains('Product Range')").parent().addClass('active');
+        $("#where a:contains('Where to Buy')").parent().addClass('active');
+        //$("#where a:contains('Become a Retailer')").parent().addClass('active');
+        $("#contact a:contains('Contact Us')").parent().addClass('active');
+
+
+
         $('#desktop-navigation').affix({
             offset: {
                 top: $('#desktop-navigation').offset().top,

@@ -166,6 +166,9 @@ a.info-nav-item {
     background-color: #2bbed8;
     color: #fff;
 }
+.nav-pills > li.active > a span, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    color: #fff;
+}
 /******** End Logo section *********/
 
 /******** myCarousel section *********/
