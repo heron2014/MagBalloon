@@ -20,6 +20,10 @@ h1 {
     font-weight: bold;
 }
 
+.alert-danger li {
+    text-decoration: none;
+}
+
 h1 span, a span, form label {
     font-family: 'HelveticaNeue-Light';
     font-weight: 100;
@@ -518,6 +522,8 @@ address {
 /*#questions > .container > .row {*/
     /*padding-top: 60px;*/
 /*}*/
+
+
 #questions > .container {
     background-color: rgba(255, 255, 255, 0.12);
     box-shadow: 10px 0px 5px -5px rgba(117, 106, 106, 0.3), -10px 0px 5px -5px rgba(117, 106, 106, 0.3);

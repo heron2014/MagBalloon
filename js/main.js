@@ -1,5 +1,6 @@
 (function() {
-    $(function() {
+    console.log('is it working');
+    jQuery(document).ready(function($) {
         $("#home a:contains('Home')").parent().addClass('active');
         $("#products a:contains('Product Range')").parent().addClass('active');
         $("#where a:contains('Where to Buy')").parent().addClass('active');
@@ -16,6 +17,14 @@
         });
         var d = new Date();
         $('.js_year').text(d.getFullYear());
+
+        //$('.panel-faq').on('show.bs.collapse', function () {
+        //    $(this).addClass('active-acc');
+        //});
+        //
+        //$('.panel-faq').on('hide.bs.collapse', function () {
+        //    $(this).removeClass('active-acc');
+        //});
 
         $('#form-contact').validate({
             rules: {
@@ -57,6 +66,6 @@
                 }
             }
         });
-        $("#form-contact")[0].reset();
+
     });
 })();
